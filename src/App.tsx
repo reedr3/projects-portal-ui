@@ -1,9 +1,14 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Dashboard from './Dashboard.tsx'
+
 function App() {
 
   return (
-    <>
-      <span>hello world</span>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Dashboard/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
