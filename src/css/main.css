@@ -1,0 +1,18 @@
+:root {
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: start;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
