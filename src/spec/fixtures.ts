@@ -1,4 +1,4 @@
-import { createFakeEvent, createFakeFile, createFakeProject } from "../helpers/fixture-helper-fns"
+import { createFakeEvent, createFakeFile, createFakeProject } from "../helpers/fixtureHelperFns"
 
 const fakeFile1Events = [createFakeEvent("received", "2025-01-01T12:42:42Z"), createFakeEvent("uploaded", "2025-01-01T13:42:42Z")]
 const fakeFile2Events = [createFakeEvent("received", "2025-01-02T12:42:42Z"), createFakeEvent("uploaded", "2025-01-02T13:42:42Z")]

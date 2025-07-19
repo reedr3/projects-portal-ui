@@ -1,0 +1,64 @@
+import { useState } from "react"
+import type { ProjectsTableProps } from "./helpers/types"
+import ActionBar from "./ActionBar"
+import NewProjectModal from "./NewProjectModal"
+import './css/ProjectsTable.css'
+
+function ProjectsTable({ projectRows, newProjectId, handleSetNewProjectId }: ProjectsTableProps) {
+
+    const [newProjectModalOpen, setNewProjectModalOpen] = useState(false)
+
+    function toggleNewProjectModal() {
+        if (newProjectModalOpen) {
+            setNewProjectModalOpen(false)
+        }
+        else {
+            setNewProjectModalOpen(true)
+        }
+    }
+
+    return (
+        <>
+            <div className="projects-table-container">
+                <div className="projects-table-header">Projects</div>
+                <ActionBar toggleNewProjectModal={toggleNewProjectModal} />
+                {newProjectModalOpen && <NewProjectModal toggleNewProjectModal={toggleNewProjectModal} handleSetNewProjectId={handleSetNewProjectId} />}
+                <div className="projects-table-div">
+                    <table className="projects-table">
+                        <thead className="projects-table-thead">
+                            <tr>
+                                <th className="col-label project-name-col">Name</th>
+                                <th className="col-label">Date</th>
+                                <th className="col-label">Author</th>
+                                <th className="col-label">Type</th>
+                                <th className="col-label">Size</th>
+                                <th className="col-label">Details</th>
+                                <th className="col-label">Files Used</th>
+                                <th className="col-label">Logs</th>
+                                <th className="col-label">Progress</th>
+                            </tr>
+                        </thead>
+                        <tbody className="projects-table-tbody">
+                            {projectRows.map((projectRow) => {
+                                if (projectRow.id == newProjectId) {
+                                    return (
+                                        <p>new project</p>
+                                        // <ProjectsTableRow key={projectRow.id} projectRow={projectRow} processTableStartsOpen={true} />
+                                    )
+                                }
+                                else {
+                                    return (
+                                        <p>old project</p>
+                                        // <ProjectsTableRow key={projectRow.id} projectRow={projectRow} processTableStartsOpen={false} />
+                                    )
+                                }
+                            })}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default ProjectsTable

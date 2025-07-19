@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import { apiURL } from './helpers/apiEndpoints'
 import type { ProjectInfo } from './helpers/types'
 import { fakeProjects } from './spec/fixtures'
+import ProjectsTable from './ProjectsTable'
 import "./css/Dashboard.css"
 
 function Dashboard() {
 
-    const [projectRows, setProjectRows] = useState<Array<ProjectInfo>>()
+    const [projectRows, setProjectRows] = useState<Array<ProjectInfo>>([])
     const [newProjectId, setNewProjectId] = useState("")
 
     useEffect(() => {
@@ -18,7 +20,7 @@ function Dashboard() {
     }
 
     function realApiCall() {
-        axios.get(`/projects`)
+        axios.get(`${apiURL}/projects`)
             .then(response => {
                 handleSetProjects(response.data)
             })

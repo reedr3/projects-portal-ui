@@ -1,0 +1,44 @@
+.projects-table-container {
+    width: 95%;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    background: #FBFCFF;
+}
+
+.projects-table-header {
+    color: #284891;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.projects-table-div {
+    background: #FBFCFF;
+    padding-top: 1rem;
+}
+
+.projects-table {
+    width: 100%;
+    padding: 0 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.projects-table-thead {
+    border-bottom: 1px solid #3471AC;
+}
+
+.col-label {
+    color: #284891;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.project-name-col {
+    width: 300px;
+}

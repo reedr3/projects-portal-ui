@@ -19,3 +19,21 @@ export interface EventInfo {
     status: string;
     timestamp: string;
 }
+
+// ==================================================================================
+// Prop types
+
+export interface ProjectsTableProps {
+    projectRows: Array<ProjectInfo>;
+    newProjectId: string;
+    handleSetNewProjectId: (id: string) => void;
+}
+
+export interface ActionBarProps {
+    toggleNewProjectModal: () => void;
+}
+
+export interface NewProjectModalProps {
+    toggleNewProjectModal: () => void;
+    handleSetNewProjectId: (id: string) => void;
+}
