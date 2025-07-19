@@ -5,8 +5,8 @@ const fakeFile2Events = [createFakeEvent("received", "2025-01-02T12:42:42Z"), cr
 const fakeFile3Events = [createFakeEvent("received", "2025-01-03T12:42:42Z"), createFakeEvent("uploaded", "2025-01-03T13:42:42Z")]
 const fakeFile4Events = [createFakeEvent("received", "2025-01-04T12:42:42Z"), createFakeEvent("uploaded", "2025-01-04T13:42:42Z")]
 
-const fakeProject1Files = [createFakeFile("1", "file-1.tar", "tar", "2048", "uploaded", fakeFile1Events), createFakeFile("2", "file-2.xlsx", "xlsx", "128", "uploaded", fakeFile2Events)]
-const fakeProject2Files = [createFakeFile("3", "file-3.tar", "tar", "2048", "uploaded", fakeFile3Events), createFakeFile("4", "file-4.xlsx", "xlsx", "128", "uploaded", fakeFile4Events)]
+const fakeProject1Files = [createFakeFile("1", "file-1.tar", "application/x-tar", "2048", "uploaded", fakeFile1Events), createFakeFile("2", "file-2.xlsx", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "128", "uploaded", fakeFile2Events)]
+const fakeProject2Files = [createFakeFile("3", "file-3.tar", "application/x-tar", "2048", "uploaded", fakeFile3Events), createFakeFile("4", "file-4.xlsx", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "128", "uploaded", fakeFile4Events)]
 
 const fakeProject1Events = [createFakeEvent("new", "2025-01-01T12:42:42Z"), createFakeEvent("ready", "2025-01-01T13:42:42Z")]
 const fakeProject2Events = [createFakeEvent("new", "2025-01-03T12:42:42Z"), createFakeEvent("ready", "2025-01-03T13:42:42Z")]

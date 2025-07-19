@@ -1,0 +1,22 @@
+.row-section {
+    color: #284891;
+    padding-top: 0.5rem;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.project-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.process-table-dropdown-button-row {
+    background: #F1F4FD;
+}
+
+.process-table-row {
+    border-bottom: 1px solid #C7DEEF;
+    background: #F1F4FD;
+}

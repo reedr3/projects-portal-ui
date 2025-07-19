@@ -1,0 +1,89 @@
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 0;
+    text-align: inherit;
+    border-radius: 0;
+    appearance: none;
+}
+
+.process-table-dropdown-button {
+    background: #F1F4FD;
+    color: #284891;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+.process-table-dropdown-button-carat {
+    width: 10px;
+}
+
+.process-table-dropdown-button-word {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.process-table-dropdown-button-status-complete {
+    border-radius: 12.295px;
+    background: rgba(23, 166, 0, 0.70);
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    padding-right: 0.75rem;
+}
+
+.process-table-dropdown-button-status-icon-complete {
+    border-radius: 12.295px;
+    border: 2px solid #17A600;
+    background: #17A600;
+
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+}
+
+.process-table-dropdown-button-status-incomplete {
+    border-radius: 12.295px;
+    background: #90BDE0;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    padding-right: 0.75rem;
+}
+
+.process-table-dropdown-button-status-icon-incomplete {
+    border-radius: 12.295px;
+    border: 2px solid #3470A9;
+    background: #3470A9;
+
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+}
+
+.minus-icon {
+    padding-bottom: 0.1rem;
+}

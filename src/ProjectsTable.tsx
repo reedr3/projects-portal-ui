@@ -2,6 +2,7 @@ import { useState } from "react"
 import type { ProjectsTableProps } from "./helpers/types"
 import ActionBar from "./ActionBar"
 import NewProjectModal from "./NewProjectModal"
+import ProjectsTableRow from "./ProjectsTableRow"
 import './css/ProjectsTable.css'
 
 function ProjectsTable({ projectRows, newProjectId, handleSetNewProjectId }: ProjectsTableProps) {
@@ -20,7 +21,6 @@ function ProjectsTable({ projectRows, newProjectId, handleSetNewProjectId }: Pro
     return (
         <>
             <div className="projects-table-container">
-                <div className="projects-table-header">Projects</div>
                 <ActionBar toggleNewProjectModal={toggleNewProjectModal} />
                 {newProjectModalOpen && <NewProjectModal toggleNewProjectModal={toggleNewProjectModal} handleSetNewProjectId={handleSetNewProjectId} />}
                 <div className="projects-table-div">
@@ -42,14 +42,12 @@ function ProjectsTable({ projectRows, newProjectId, handleSetNewProjectId }: Pro
                             {projectRows.map((projectRow) => {
                                 if (projectRow.id == newProjectId) {
                                     return (
-                                        <p>new project</p>
-                                        // <ProjectsTableRow key={projectRow.id} projectRow={projectRow} processTableStartsOpen={true} />
+                                        <ProjectsTableRow key={projectRow.id} projectRow={projectRow} processTableStartsOpen={true} />
                                     )
                                 }
                                 else {
                                     return (
-                                        <p>old project</p>
-                                        // <ProjectsTableRow key={projectRow.id} projectRow={projectRow} processTableStartsOpen={false} />
+                                        <ProjectsTableRow key={projectRow.id} projectRow={projectRow} processTableStartsOpen={false} />
                                     )
                                 }
                             })}

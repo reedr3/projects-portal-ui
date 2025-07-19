@@ -1,0 +1,17 @@
+.process-table-container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.process-table {
+    padding: 0 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.bigger-row {
+    height: 50px;
+    padding-bottom: 0.5rem;
+}
