@@ -1,0 +1,23 @@
+.generated-process-row-section {
+    color: #284891;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    width: 25%;
+    height: 50px;
+    padding-bottom: 0.5rem;
+    vertical-align: top;
+}
+
+.ungenerated-process-row-section {
+    width: 25%;
+    height: 20px;
+    vertical-align: top;
+
+    color: #90BDE0;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 14px;
+}

@@ -1,0 +1,54 @@
+.blue-button {
+    border-radius: 20px;
+    background: #C7DEEF;
+    color: #284891;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32.51px;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding-right: 0.95rem;
+    height: 38px;
+}
+
+.blue-button-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    height: 38px;
+}
+
+.play-icon {
+    position: absolute;
+    left: 7px;
+}
+
+.play-circle {
+    padding-left: 0.1rem;
+    padding-right: 0.5rem;
+}
+
+.blue-button-inactive {
+    border-radius: 20px;
+    background: #C7DEEF;
+    color: #568ABD;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32.51px;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding-right: 0.95rem;
+    height: 38px;
+
+    cursor: not-allowed;
+}

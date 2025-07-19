@@ -1,0 +1,131 @@
+.process-upload-row-section {
+    color: #284891;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    width: 25%;
+    height: 50px;
+    padding-bottom: 0.5rem;
+    vertical-align: top;
+}
+
+.inactive-process-upload-row-section {
+    color: #5793BC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    width: 25%;
+    height: 20px;
+    vertical-align: top;
+}
+
+.upload-file-container {
+    display: flex;
+    align-items: center;
+}
+
+.choose-file-input::file-selector-button {
+    border-radius: 3px;
+    border: 1px solid var(--CTG-Colors-Blue1, #90BDE0);
+    background: var(--CTG-Colors-White-Blue, #F1F4FD);
+    color: var(--CTG-Colors-Blue5, #3471AC);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.choose-file-input-inactive::file-selector-button {
+    border-radius: 3px;
+    border: 1px solid var(--CTG-Colors-Blue1, #90BDE0);
+    background: var(--CTG-Colors-White-Blue, #F1F4FD);
+    color: var(--CTG-Colors-Blue5, #90BDE0);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: not-allowed;
+}
+
+.choose-file-input {
+    display: block;
+    color: var(--CTG-Colors-Blue1, #90BDE0);
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.choose-file-input-inactive {
+    display: block;
+    color: var(--CTG-Colors-Blue1, #90BDE0);
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.upload-button {
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid var(--CTG-Colors-Blue5, #3471AC);
+    background: var(--ColorsList-defaut, #F1F4FD);
+    color: var(--CTG-Colors-Blue5, #3471AC);
+    padding: 0.05rem 0.1rem;
+    width: 80px;
+    height: 28px;
+}
+
+.upload-button-inactive {
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid var(--CTG-Colors-Blue5, #90BDE0);
+    background: var(--ColorsList-defaut, #F1F4FD);
+    color: var(--CTG-Colors-Blue5, #90BDE0);
+    padding: 0.05rem 0.1rem;
+    width: 80px;
+    height: 28px;
+    cursor: not-allowed;
+}
+
+.upload-button-word {
+    padding-top: 0.15rem;
+    padding-left: 0.15rem;
+}
+
+.file-to-encode-filename {
+    color: #284891;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.other-filename {
+    color: #284891;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.editing-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-button {
+    border-radius: 6px;
+    border: 1px solid #90BDE0;
+    color: #90BDE0;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 0.3rem;
+    padding-right: 0.4rem;
+    margin-left: 0.5rem;
+}

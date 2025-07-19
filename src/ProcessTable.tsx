@@ -2,6 +2,12 @@ import { useEffect, useRef, useState } from "react"
 import axios from 'axios'
 import { apiURL } from "./helpers/apiEndpoints"
 import type { FileInfo, ProcessTableProps, ProjectInfo } from "./helpers/types"
+import ProcessTH from "./ProcessTH"
+import ProcessTD from "./ProcessTD"
+import ProcessTDGeneratedFile from "./ProcessTDGeneratedFile"
+import ProcessTDUpload from "./ProcessTDUpload"
+import ProcessTDDownload from "./ProcessTDDownload"
+import BlueButton from "./BlueButton"
 import './css/ProcessTable.css'
 
 function ProcessTable({ projectRow }: ProcessTableProps) {
@@ -170,9 +176,9 @@ function ProcessTable({ projectRow }: ProcessTableProps) {
                         </tr>
                         <tr className="process-row">
                             <ProcessTDUpload isActive={true} existingFile={existingXlsxFile} acceptedFileType=".xlsx" inputFileRef={inputXlsxFileRef} inputChangeHandler={handleXlsxFileSeclect} buttonClickHandler={handleSubmitXlsxFile} />
-                            <ProcessTDGeneratedFiles isGenerated={false} displayText="Run “Compute Print Configuration” to generate these files" />
+                            <ProcessTDGeneratedFile isGenerated={false} displayText="Run “Compute Print Configuration” to generate these files" />
                             <ProcessTDUpload isActive={false} existingFile={undefined} acceptedFileType=".xlsx" inputFileRef={inputBadNozzleFileRef} inputChangeHandler={handleBadNozzleFileSeclect} buttonClickHandler={() => { }} />
-                            <ProcessTDGeneratedFiles isGenerated={false} displayText="Run “Compute Print Instructions” to generate these files" />
+                            <ProcessTDGeneratedFile isGenerated={false} displayText="Run “Compute Print Instructions” to generate these files" />
                         </tr>
                     </tbody>
                 </table>

@@ -1,0 +1,21 @@
+.process-row-section {
+    color: #284891;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    width: 25%;
+    height: 20px;
+    vertical-align: top;
+}
+
+.inactive-process-row-section {
+    color: #5793BC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    width: 25%;
+    height: 20px;
+    vertical-align: top;
+}

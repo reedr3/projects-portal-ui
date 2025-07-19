@@ -52,3 +52,37 @@ export interface ProcessTableDropdownButtonProps {
 export interface ProcessTableProps {
     projectRow: ProjectInfo;
 }
+
+export interface ProcessTHProps {
+    isActive: boolean;
+    displayText: string;
+}
+
+export interface ProcessTDProps {
+    isActive: boolean;
+    displayText: string
+}
+
+export interface ProcessTDGeneratedFileProps {
+    isGenerated: boolean;
+    displayText: string
+}
+
+export interface ProcessTDUploadProps {
+    isActive: boolean;
+    existingFile: FileInfo | undefined;
+    acceptedFileType: string;
+    inputFileRef: React.LegacyRef<HTMLInputElement> | undefined;
+    inputChangeHandler: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    buttonClickHandler: (e: any) => void;
+}
+
+export interface ProcessTDDownloadProps {
+    isActive: boolean;
+}
+
+export interface BlueButtonProps {
+    buttonText: string;
+    onSubmit: (e: any) => void;
+    isActive: boolean;
+}
