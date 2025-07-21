@@ -29,13 +29,11 @@ function ProjectsTable({ projectRows, newProjectId, handleSetNewProjectId }: Pro
                             <tr>
                                 <th className="col-label project-name-col">Name</th>
                                 <th className="col-label">Date</th>
-                                <th className="col-label">Author</th>
+                                <th className="col-label wider-col">Author</th>
                                 <th className="col-label">Type</th>
                                 <th className="col-label">Size</th>
-                                <th className="col-label">Details</th>
-                                <th className="col-label">Files Used</th>
-                                <th className="col-label">Logs</th>
-                                <th className="col-label">Progress</th>
+                                <th className="col-label wider-col">Details</th>
+                                <th className="col-label wider-col">Progress</th>
                             </tr>
                         </thead>
                         <tbody className="projects-table-tbody">

@@ -29,8 +29,13 @@
     font-weight: 300;
     line-height: 20px;
     text-transform: uppercase;
+    width: 10%;
 }
 
 .project-name-col {
-    width: 300px;
+    width: 25%;
+}
+
+.wider-col {
+    width: 15%;
 }

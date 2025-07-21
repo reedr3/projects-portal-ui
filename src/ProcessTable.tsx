@@ -152,9 +152,9 @@ function ProcessTable({ projectRow }: ProcessTableProps) {
                     <tbody className="process-table-body">
                         <tr className="process-row">
                             <ProcessTD isActive={true} displayText="Input Dataset" />
-                            <ProcessTD isActive={step2Active.current} displayText="Run Compute Configurations" />
+                            <ProcessTD isActive={step2Active.current} displayText="" />
                             <ProcessTD isActive={false} displayText="File to Modify" />
-                            <ProcessTD isActive={false} displayText="Compute Final Configuration" />
+                            <ProcessTD isActive={false} displayText="" />
                         </tr>
                         <tr className="process-row">
                             <ProcessTDUpload isActive={true} existingFile={existingTarFile} acceptedFileType=".tar" inputFileRef={inputTarFileRef} inputChangeHandler={handleTarFileSeclect} buttonClickHandler={handleSubmitTarFile} />

@@ -73,8 +73,6 @@ function ProjectsTableRow({ projectRow, processTableStartsOpen }: ProjectsTableR
                 <td className="row-section">{fileTypeDisplayVal}</td>
                 <td className="row-section">{fileSize}</td>
                 <td className="row-section">details here</td>
-                <td className="row-section">files used here</td>
-                <td className="row-section">logs here</td>
                 <td className="row-section">progress here</td>
             </tr>
             <tr className='process-table-dropdown-button-row'>
