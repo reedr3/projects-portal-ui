@@ -1,9 +1,10 @@
 .process-col-label {
     color: #284891;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 20px;
+    text-decoration: underline;
     width: 25%;
     height: 20px;
     padding-bottom: 0.5rem;
@@ -11,10 +12,11 @@
 
 .inactive-process-col-label {
     color: #5793BC;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 20px;
+    text-decoration: underline;
     width: 25%;
     height: 20px;
     padding-bottom: 0.5rem;

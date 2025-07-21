@@ -5,7 +5,7 @@ import minusIcon from '/minus.svg'
 import type { ProcessTableDropdownButtonProps } from './helpers/types'
 import "./css/ProcessTableDropdownButton.css"
 
-function ProcessTableDropdownButton({ projectComplete, processDropdownOpen, toggleDropdown }: ProcessTableDropdownButtonProps) {
+function ProcessTableDropdownButton({ projectComplete, processTableDropdownOpen, toggleDropdown }: ProcessTableDropdownButtonProps) {
 
     const closedDropdownIndicator = <img src={rightCarat} className="right-carat" alt="Dropdown-indicator-closed" />
     const openDropdownIndicator = <img src={downCarat} className="down-carat" alt="Dropdown-indicator-open" />
@@ -32,8 +32,8 @@ function ProcessTableDropdownButton({ projectComplete, processDropdownOpen, togg
         <>
             <button className="process-table-dropdown-button" onClick={toggleDropdown}>
                 <div className="process-table-dropdown-button-carat">
-                    {processDropdownOpen && openDropdownIndicator}
-                    {!processDropdownOpen && closedDropdownIndicator}
+                    {processTableDropdownOpen && openDropdownIndicator}
+                    {!processTableDropdownOpen && closedDropdownIndicator}
                 </div>
                 <div className="process-table-dropdown-button-word">
                     <span>PROCESS: </span>

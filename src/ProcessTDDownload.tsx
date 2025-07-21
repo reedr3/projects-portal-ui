@@ -23,7 +23,7 @@ function ProcessTDDownload({ isActive }: ProcessTDDownloadProps) {
                 <div className="download-file-container">
                     <select className={downloadDropdownClassname} value={selectedVal} onChange={handleSelection}>
                         <option className='download-option' value={""}>Select a file</option>
-                        <option className='download-option' value={"option1"}>Blank_BNF.xlsx</option>
+                        <option className='download-option' value={"option1"}>Template_File.xlsx</option>
                     </select>
                     <button className={downloadButtonClassname}><img src={downloadIcon} className="download-icon" alt="Download Button" /></button>
                 </div>

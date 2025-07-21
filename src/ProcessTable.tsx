@@ -143,24 +143,24 @@ function ProcessTable({ projectRow }: ProcessTableProps) {
                 <table className="process-table">
                     <thead className="process-table-header">
                         <tr>
-                            <ProcessTH isActive={true} displayText="STEP 1: Add input files" />
-                            <ProcessTH isActive={step2Active.current} displayText="STEP 2: Compute Print Configurations" />
-                            <ProcessTH isActive={false} displayText="STEP 3: Operator generates the Bad Nozzle File" />
-                            <ProcessTH isActive={false} displayText="STEP 4: Compute Print Instructions and generate Final Print File" />
+                            <ProcessTH isActive={true} displayText="STEP 1: Add Input Files" />
+                            <ProcessTH isActive={step2Active.current} displayText="STEP 2: Compute Initial Configuration Files" />
+                            <ProcessTH isActive={false} displayText="STEP 3: Modify And Upload Additional File" />
+                            <ProcessTH isActive={false} displayText="STEP 4: Compute Final Configuration File" />
                         </tr>
                     </thead>
                     <tbody className="process-table-body">
                         <tr className="process-row">
-                            <ProcessTD isActive={true} displayText="Dataset to encode" />
+                            <ProcessTD isActive={true} displayText="Input Dataset" />
                             <ProcessTD isActive={step2Active.current} displayText="Run Compute Configurations" />
-                            <ProcessTD isActive={false} displayText="Initial Bad Nozzle File (to use in Shannon)" />
-                            <ProcessTD isActive={false} displayText="Compute the Print Instructions" />
+                            <ProcessTD isActive={false} displayText="File to Modify" />
+                            <ProcessTD isActive={false} displayText="Compute Final Configuration" />
                         </tr>
                         <tr className="process-row">
                             <ProcessTDUpload isActive={true} existingFile={existingTarFile} acceptedFileType=".tar" inputFileRef={inputTarFileRef} inputChangeHandler={handleTarFileSeclect} buttonClickHandler={handleSubmitTarFile} />
-                            <td className="process-row-section bigger-row"><BlueButton buttonText={"COMPUTE PRINT CONFIGURATION"} onSubmit={handleSubmitComputeConfig} isActive={step2Active.current} /></td>
+                            <td className="process-row-section bigger-row"><BlueButton buttonText={"COMPUTE INITIAL CONFIGURATIONS"} onSubmit={handleSubmitComputeConfig} isActive={step2Active.current} /></td>
                             <ProcessTDDownload isActive={false} />
-                            <td className="process-row-section bigger-row"><BlueButton buttonText={"COMPUTE PRINT INSTRUCTIONS"} onSubmit={() => { }} isActive={false} /></td>
+                            <td className="process-row-section bigger-row"><BlueButton buttonText={"COMPUTE FINAL CONFIGURATION"} onSubmit={() => { }} isActive={false} /></td>
                         </tr>
                         <tr className="process-row">
                             <ProcessTD isActive={true} displayText="" />
@@ -169,16 +169,16 @@ function ProcessTable({ projectRow }: ProcessTableProps) {
                             <ProcessTD isActive={false} displayText="Current progress: unstarted" />
                         </tr>
                         <tr className="process-row">
-                            <ProcessTD isActive={true} displayText="Print Setup Worksheet" />
-                            <ProcessTD isActive={step2Active.current} displayText="Files auto-generated:" />
-                            <ProcessTD isActive={false} displayText="Final Bad Nozzle File (after Shannon)" />
-                            <ProcessTD isActive={false} displayText="Final Print File auto-generated:" />
+                            <ProcessTD isActive={true} displayText="Setup Worksheet" />
+                            <ProcessTD isActive={step2Active.current} displayText="Config Files Auto-Generated:" />
+                            <ProcessTD isActive={false} displayText="Modified File" />
+                            <ProcessTD isActive={false} displayText="Final Config File Auto-Generated:" />
                         </tr>
                         <tr className="process-row">
                             <ProcessTDUpload isActive={true} existingFile={existingXlsxFile} acceptedFileType=".xlsx" inputFileRef={inputXlsxFileRef} inputChangeHandler={handleXlsxFileSeclect} buttonClickHandler={handleSubmitXlsxFile} />
-                            <ProcessTDGeneratedFile isGenerated={false} displayText="Run “Compute Print Configuration” to generate these files" />
+                            <ProcessTDGeneratedFile isGenerated={false} displayText="Run “Compute Initial Configurations” to generate these files" />
                             <ProcessTDUpload isActive={false} existingFile={undefined} acceptedFileType=".xlsx" inputFileRef={inputBadNozzleFileRef} inputChangeHandler={handleBadNozzleFileSeclect} buttonClickHandler={() => { }} />
-                            <ProcessTDGeneratedFile isGenerated={false} displayText="Run “Compute Print Instructions” to generate these files" />
+                            <ProcessTDGeneratedFile isGenerated={false} displayText="Run “Compute Final Configuration” to generate this file" />
                         </tr>
                     </tbody>
                 </table>

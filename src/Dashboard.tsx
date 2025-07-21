@@ -56,7 +56,7 @@ function Dashboard() {
         <>
             <div className='dashboard'>
                 <div className='dashboard-header-group'>
-                    <div className='dashboard-header'>Project Portal</div>
+                    <div className='dashboard-header'>Projects Portal</div>
                     <div className='dashboard-sub-header'>View and manage your projects</div>
                 </div>
                 <ProjectsTable projectRows={projectRows} newProjectId={newProjectId} handleSetNewProjectId={handleSetNewProjectId} />
